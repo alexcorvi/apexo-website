@@ -1,425 +1,612 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta charset="utf-8" />
+		<title>Apexo - Free Dental Clinic Practice Manager</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link rel="icon" type="image/x-icon" href="fav.png" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta
+			name="description"
+			content="Keep your dental clinic records at your finger tips with a beautifully designed application that meets most needs of any
+    dental clinic. From patient records, history, appointments and scheduling, to finances and detailed reports."
+		/>
+		<meta name="author" content="" />
+		<link
+			href="assets/plugins/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="assets/plugins/font-awesome/css/font-awesome.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			class="main-stylesheet"
+			href="assets/css/styles.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			class="main-stylesheet"
+			href="assets/css/custom.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+	</head>
 
-<head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Apexo - Free Dental Clinic Practice Manager</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/x-icon" href="fav.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="description" content="Keep your dental clinic records at your finger tips with a beautifully designed application that meets most needs of any
-    dental clinic. From patient records, history, appointments and scheduling, to finances and detailed reports.">
-    <meta name="author" content="">
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="assets/css/custom.css" rel="stylesheet" type="text/css">
-</head>
+	<body class="windows desktop">
+		<nav
+			class="header md-header light-solid"
+			data-pages="header"
+			data-pages-header="autoresize"
+		>
+			<div class="container relative">
+				<div class="pull-left">
+					<div class="header-inner">
+						<img
+							src="assets/images/logo.png"
+							height="22"
+							data-src-retina="assets/images/logo_2x.png"
+							class=""
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="pull-right">
+					<div class="header-inner">
+						<div
+							class="hidden-lg-up menu-toggler pull-right p-l-10"
+							data-pages="header-toggle"
+							data-pages-element="#header"
+						>
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="menu-content mobile-dark pull-right clearfix"
+					data-pages-direction="slideRight"
+					id="header"
+				>
+					<div class="pull-right">
+						<a
+							href="#"
+							class="padding-10 hidden-lg-up pull-right m-t-10 m-b-10 m-r-10"
+							data-pages="header-toggle"
+							data-pages-element="#header"
+						>
+							<i class="pg-close_line"></i>
+						</a>
+					</div>
+					<div class="header-inner">
+						<ul class="menu">
+							<li>
+								<a
+									class="btn btn-warning"
+									href="#getting-started"
+									>Get Started</a
+								>
+							</li>
+							<li>
+								<a href="https://demo.apexo.app" target="_blank"
+									>Demo</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://github.com/alexcorvi/apexo"
+									target="_blank"
+									>GitHub</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="page-wrappers">
+			<section class="p-b-85 p-t-100" id="sectionLayout">
+				<div class="container">
+					<div class="md-p-l-20 md-p-r-20 xs-no-padding m-b-45">
+						<h5 class="fs-16 m-b-20 hint-text no-margin">
+							Say goodbye to pen and paper
+						</h5>
+						<div class="row">
+							<div class="col-sm-5 col-md-4">
+								<h2 class="m-t-5">
+									By <i>dentist</i> for <i>dentists</i>
+								</h2>
+							</div>
+							<div
+								class="col-sm-7 col-md-7 no-padding xs-p-l-15 xs-p-r-15"
+							>
+								<div class="p-l-35 md-p-l-5 md-p-t-15">
+									<p>
+										Keep your dental clinic records at your
+										finger tips with a beautifully designed
+										application that meets most needs of any
+										dental clinic. From patient records,
+										history, appointments and scheduling, to
+										finances and detailed reports.
+									</p>
+									<p
+										class="hint-text small-text col-md-7 no-padding"
+									>
+										+ More optional modules
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/calendar.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Appointments management
+								</p>
+								<h3 class="normal text-black">
+									Calendar
+								</h3>
+								<p class="fs-15 p-b-35">
+									A weekly calendar, that has been
+									specifically designed and optimized for
+									appointments management.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/pt-management.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Keep record of your
+								</p>
+								<h3 class="normal text-black">
+									Patients
+								</h3>
+								<p class="fs-15 p-b-35">
+									Easily accessible and searchable patients
+									records. With medical history and dental
+									history that is detailed on graphic chart on
+									each tooth.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/stats.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Tracking & reporting
+								</p>
+								<h3 class="normal text-black">
+									Statistics
+								</h3>
+								<p class="fs-15 p-b-35">
+									Detailed reports about patients, doctors,
+									appointments and finances, for a single or
+									all doctors.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/polyclinics.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Multiple doctors & staff
+								</p>
+								<h3 class="normal text-black">
+									Polyclinics
+								</h3>
+								<p class="fs-15 p-b-35">
+									It can be used with multiple accounts, each
+									staff member or doctor can have specific
+									permissions on the application.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/sync.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Multiple devices
+								</p>
+								<h3 class="normal text-black">
+									Synchronization
+								</h3>
+								<p class="fs-15 p-b-35">
+									Install the application on any device you
+									use, and all of your devices will be in
+									synchronization with each other.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/offline.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Also works when
+								</p>
+								<h3 class="normal text-black">
+									Offline
+								</h3>
+								<p class="fs-15 p-b-35">
+									The application is fully functional when
+									you're offline, and just as you become
+									online, all of your devices will be back on
+									sync again.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/languages.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Many languages
+								</p>
+								<h3 class="normal text-black">
+									Internationalization
+								</h3>
+								<p class="fs-15 p-b-35">
+									You can use the application in any of the
+									supported languages; English, German,
+									Spanish, Chinese, Arabic, and Kurdish.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/secure.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Protected and encrypted
+								</p>
+								<h3 class="normal text-black">
+									Secure
+								</h3>
+								<p class="fs-15 p-b-35">
+									Our servers are HIPAA-compliant, encrypted &
+									secure. The data are two-way encrypted, in
+									your local device and in our servers.
+								</p>
+							</span>
+						</div>
+						<div class="col-md-4">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/backups.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Safe and portable
+								</p>
+								<h3 class="normal text-black">
+									Backups
+								</h3>
+								<p class="fs-15 p-b-35">
+									Your data is automatically backed up and
+									saved securely (encrypted) on multiple
+									locations. You can retrieve any backup in a
+									matter of second.
+								</p>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="p-b-200 p-t-100 bg-primary relative no-overflow">
+				<img
+					src="assets/images/mac1.png"
+					class="dev-macbook hidden-md-down"
+				/>
+				<div class="container p-t-30">
+					<div class="row sm-p-l-15 sm-p-r-15">
+						<div class="col-lg-6">
+							<div class="row p-b-70">
+								<div class="col-md-9">
+									<p class="text-warning fs-16 normal p-b-20">
+										See for yourself
+									</p>
+									<p class="fs-16 light text-white lh-fix">
+										Here's a demo of different modules of
+										the application. This is a readonly
+										demo, all the changes will be lost as
+										soon as you leave the application.
+									</p>
+									<p class="fs-16 light text-white lh-fix">
+										This demo is a web application, no
+										installation required.
+									</p>
+								</div>
+							</div>
+							<a
+								class="btn btn-warning demo-btn"
+								href="http://demo.apexo.app"
+								target="_blank"
+								>Open Demo</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="container plans relative no-overflow bg-white"
+				id="getting-started"
+				style="z-index: 1;"
+			>
+				<div class="row">
+					<div class="col-md-6 plan-container">
+						<div class="plan">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/developer.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Build your own server
+								</p>
+								<h3 class="normal text-black">
+									<i>Community</i> version
+								</h3>
+								<p class="fs-15 p-t-45">
+									A free version where you're responsible for
+									building the server and the required APIs
+									needed. This version suits you only if you
+									have a good background in programming,
+									database systems and servers.<br />
+									<br />
+									<a
+										class="btn btn-default"
+										href="https://github.com/alexcorvi/apexo"
+									>
+										GitHub
+									</a>
+								</p>
+							</span>
+						</div>
+					</div>
+					<div class="col-md-6 plan-container">
+						<div class="plan">
+							<div class="feature-svg">
+								<img
+									src="assets/svg/supported.svg"
+									alt="condensed layout"
+									class="lazy loaded"
+								/>
+							</div>
+							<span
+								class="feature-text p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35"
+							>
+								<p class="fs-16 text-black">
+									Use our optimized servers
+								</p>
+								<h3 class="normal text-black">
+									<i>Supported</i> version
+								</h3>
+								<h5 class="price">399$ / year</h5>
+								<p class="fs-15">
+									Our servers has been optimized to be used
+									with our application. It's highly secured,
+									encrypted, HIPAA-compliant, fast, regularly
+									maintained, with 99% uptime. It takes only
+									few clicks to get started.
+									<br /><br />
+									<button class="btn btn-primary">
+										Get Started
+									</button>
+								</p>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<body class="windows desktop"><h1 style="
-    text-align: center;
-    margin-top: 10%;
-">We will be back soon</h1>
-<!--
-     <nav class="header md-header light-solid" data-pages="header" data-pages-header="autoresize">
-<div class="container relative">
-<div class="pull-left">
-<div class="header-inner">
-<img src="assets/images/logo.png" height="22" data-src-retina="assets/images/logo_2x.png" class="" alt="">
-</div>
-</div>
-<div class="pull-right">
-<div class="header-inner">
-<div class="hidden-lg-up menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
-<div class="one"></div>
-<div class="two"></div>
-<div class="three"></div>
-</div>
-</div>
-</div>
-<div class="menu-content mobile-dark pull-right clearfix" data-pages-direction="slideRight" id="header">
-<div class="pull-right">
-<a href="#" class="padding-10 hidden-lg-up pull-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle" data-pages-element="#header">
-<i class=" pg-close_line"></i>
-</a>
-</div>
-<div class="header-inner">
-<ul class="menu">
-<li>
-<a href="https://github.com/alexcorvi/apexo" target="_blank">GitHub</a>
-</li>
-<li>
-<a href="https://docs.apexo.app" target="_blank">Documentation</a>
-</li>
-<li>
-<a href="https://demo.apexo.app" target="_blank">Demo</a>
-</li>
-<li class="btnli">
-<a class="btn btn-bordered-black btn-primary" href="#Download">Download</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</nav>
-<div class="page-wrappers">
-<section class="p-b-85 p-t-100" id="sectionLayout">
-<div class="container">
-<div class="md-p-l-20 md-p-r-20 xs-no-padding m-b-45">
-<h5 class="fs-16 m-b-20 hint-text no-margin">
-Say goodbye to pen and paper
-</h5>
-<div class="row">
-<div class="col-sm-5 col-md-4">
-<h2 class="m-t-5">
-By dentist for dentists
-</h2>
-</div>
-<div class="col-sm-7 col-md-7 no-padding xs-p-l-15 xs-p-r-15">
-<div class="p-l-35 md-p-l-5 md-p-t-15">
- <p>
-Keep your dental clinic records at your finger tips with a beautifully designed application that meets most needs of any dental clinic. From patient records, history, appointments and scheduling, to finances and detailed reports.
-</p>
-<p class="hint-text  small-text col-md-7 no-padding">
-+ More optional modules
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6">
-<div class="">
-<a class="preview-selector m-b-40" href="https://demo.apexo.app/#!/patients" target="_blank">
-<span class="preview-item condensed-layout">
-<img src="assets/images/patients.png" alt="condensed layout" class="lazy loaded">
-<span class="selecter-overlay justify-content-center align-items-center d-flex">
-<span class="btn btn-primary text-white">Live Demo</span>
-</span>
-</span>
-<span class="p-t-30 p-b-35  sm-p-l-15 p-l-35 p-r-35">
-<p class="fs-16 text-black">Keep your records easily accessible</p>
-<h3 class="normal text-black">Patients Manager</h3>
-<p class="fs-15 p-t-10 p-b-35">Easily accessible and searchable patients records. Each patient can have persona information, labels, medical history and, of course, dental history that is detailed on graphic chart on each tooth.</p>
-</span>
-</a>
-</div>
-<div class="">
-<a class="preview-selector m-b-40" href="https://demo.apexo.app/#!/appointments" target="_blank">
-<span class="preview-item horizontal-menu">
-<img src="assets/images/calendar.png" alt="condensed layout" class="lazy loaded">
-<span class="selecter-overlay justify-content-center align-items-center d-flex">
-<span class="btn btn-primary text-white">Live Demo</span>
-</span>
-</span>
-<span class="p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35">
-<p class="fs-16 text-black">Days, weeks, months and years</p>
-<h3 class="normal text-black">Calendar</h3>
-<p class="fs-15 p-t-10 p-b-35">Intuitive and easy to use calendar. Detailed enough to keep track of any number of appointments by having color coded days, filtering by doctor, and you can even search through it.</p>
-</span>
-
-</a>
-</div>
-<div class="">
-<a class="preview-selector m-b-40" href="https://demo.apexo.app/#!/appointments" target="_blank">
-<span class="preview-item expanded-sidebar">
-<img src="assets/images/appointment.png" alt="condensed layout" class="lazy loaded">
-<span class="selecter-overlay justify-content-center align-items-center d-flex">
-<span class="btn btn-primary text-white">Live Demo</span>
-</span>
-</span>
-<span class="p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35">
-<p class="fs-16 text-black">Keep everything in place</p>
-<h3 class="normal text-black">Appointments Manager</h3>
-<p class="fs-15 p-t-10 p-b-35">Each appointment can the very details you would usually find on a case sheet and even more.</p>
-</span>
-</a>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="">
-<a class="preview-selector m-b-40" href="https://demo.apexo.app/#!/doctors" target="_blank">
-<span class="preview-item horizontal-menu-condensed">
-<img src="assets/images/doctors.png" alt="condensed layout" class="lazy loaded">
-<span class="selecter-overlay justify-content-center align-items-center d-flex">
-<span class="btn btn-primary text-white">Live Demo</span>
-</span>
-</span>
-<span class="p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35">
-<p class="fs-16 text-black">Support for polyclinics</p>
-<h3 class="normal text-black">Multiple Doctors</h3>
-<p class="fs-15 p-t-10 p-b-35">The application has been made with polyclinics on mind, so each doctor can have personalized records, reports and calendar. Though it can be used for a single doctor.</p>
-</span>
-</a>
-</div>
-<div class="">
-<a class="preview-selector m-b-40" href="https://demo.apexo.app/#!/statistics" target="_blank">
-<span class="preview-item light-dashboard">
-<img src="assets/images/stats.png" alt="condensed layout" class="lazy loaded">
-<span class="selecter-overlay justify-content-center align-items-center d-flex">
-<span class="btn btn-primary text-white">Live Demo</span>
-</span>
-</span>
-<span class="p-t-30 p-b-35 sm-p-l-15 p-l-35 p-r-35">
-<p class="fs-16 text-black">Track, record, and report</p>
-<h3 class="normal text-black">Statistics</h3>
-<p class="fs-15 p-t-10 p-b-35">Just pick a date range and you'll have a detailed reports about the patients, the doctors, the appointments and the finances, for all, or for single doctor.</p>
-</span>
-</a>
-</div>
-<div class="">
-<div class="preview-selector selected d-flex justify-content-center align-items-center flex-column relative">
-<p class="fs-16 text-black">And even more</p>
-<h3 class="normal text-black">+ Optional Modules</h3>
-<div class="absolute pull-bottom p-b-20 no-margin full-width">
-<div class="row d-flex justify-content-center ">
-<div class="col-8">
-<p class="text-center fs-12">There's also other optional modules like the <b><a href="https://demo.apexo.app/#!/prescriptions" target="_blank">prescriptions</a></b> module and the <b><a href="https://demo.apexo.app/#!/orthodontic" target="_blank">orthodontics</a></b> module.
-</p>
-</div>
-</div>
-</div>
-</div>
- </div>
-</div>
-</div>
-</div>
-</section>
-<section class="p-b-200 p-t-100 bg-primary relative no-overflow">
-<img src="assets/images/mac1.png" class="dev-macbook hidden-md-down">
-<div class="container p-t-30">
-<div class="row sm-p-l-15 sm-p-r-15">
-<div class="col-lg-6">
-<div class="row p-b-70">
-<div class="col-md-9">
-<p class="text-warning fs-16 normal p-b-20">Developer Friendly</p>
-<h2 class="normal text-white m-b-20">Developed using latest technologies</h2>
-<p class="fs-16 light text-white lh-fix">Yet everything is so deeply and thoroughly documented.</p>
-</div>
-</div>
-<div class="row m-b-25">
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">React &amp; MobX</h4>
-<p class="fs-15 light text-primary-light lh-fix">Declarative, efficient, functional and scalable.</p>
-</div>
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">TypeScript</h4>
-<p class="fs-15 light text-primary-light lh-fix">Strongly typed for better tooling and better developer experience.</p>
-</div>
-</div>
-<div class="row m-b-25">
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">CouchDB &amp; PouchDB</h4>
-<p class="fs-15 light text-primary-light lh-fix">A database system designed for synchronization, reliability and real-time application that scales from big data to mobile.</p>
-</div>
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">No Backend</h4>
-<p class="fs-15 light text-primary-light lh-fix">It does <b>not</b> have or need any backend code, just connect it to a database server and it will work, so it can only have DBaaS as a backend, like <a target="_blank" href="https://www.ibm.com/cloud/cloudant">IBM Cloudant</a>.</p>
-</div>
-</div>
-<div class="row m-b-25">
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">Sass</h4>
-<p class="fs-15 light text-primary-light lh-fix">Sass is the most mature, stable, and powerful professional grade CSS extension language.</p>
-</div>
-<div class="col-md-6">
-<h4 class="normal text-white lh-fix">Other...</h4>
-<p class="fs-15 light text-primary-light lh-fix">Other libraries are used, all are reliable and thoroughly tested.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="github relative no-overflow bg-white" style="z-index: 1">
-<div class="container d-flex align-items-center full-height">
-<div class="row full-width sm-p-t-30 sm-p-b-30">
-<div class="col-lg-5">
-<div class="">
-<h2 class="normal text-black m-b-20">Offline / Multiple devices</h2>
-<p class="fs-15 p-t-0 p-b-25 lh-fix">The application can run perfectly <b>offline</b>, no internet connection is needed. <br><br>When an internet connection is present it will automatically upload the data to your server and the data will be in synchronization on all of the devices that are connected to the same server.</p>
-<p class="fs-12 p-t-15 lh-fix-alt muted-alt">* Following the provided documentation, you'll be responsible for your server, which is basically just a CouchDB database.</p>
-</div>
-</div>
-</div>
-</div>
-<img src="assets/images/multisync.jpg" alt="" class="" style="
-                height: 300px;
-                position: absolute;
-                right: 100px;
-                top: 200px;
-            ">
-</section>
-<section class="bg-black">
-<div class="container preview-shots">
-<div class="row">
-<div class="col-sm-4 hidden-xs-down p-l-5 p-r-5">
-<img class="full-width" data-pages="float" src="assets/images/all1.png" alt="" data-max-top-translate="400" data-max-bottom-translate="300" data-speed="0.3" data-delay="100" data-curve="ease">
-</div>
-<div class="col-sm-4 p-l-5 p-r-5">
-<img class="full-width" data-pages="floats" src="assets/images/all2.png" alt="" data-max-top-translate="40" data-max-bottom-translate="300" data-speed="-0.1" data-delay="100" data-curve="ease">
-</div>
-<div class="col-sm-4 hidden-xs-down p-l-5 p-r-5">
-<img class="full-width" data-pages="float" src="assets/images/all3.png" alt="" data-max-top-translate="500" data-max-bottom-translate="0" data-speed="-0.1" data-delay="100" data-curve="ease">
-</div>
-</div>
-</div>
-<div class="black-gradient p-b-40 relative">
-<div class="container " id="Download">
-<div class="row justify-content-center">
-<div class="col-md-4">
-<div class="pricing-table">
-<h4 class="text-default">
-Setup your server
-</h4>
-<br>
-<p class="fs-15">Ready your server really easy by following simple steps that are detailed in the documentation.</p>
-<br>
-<div class="align-items-center justify-content-end  p-r-5">
-<a href="https://docs.apexo.app" class="btn btn-large btn-default">Read the documentation</a>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="pricing-table">
-<h4 class="text-default">
-Download
-</h4>
-<br>
-<p class="fs-15">A packaged application ready for download for both MacOS and Windows operating systems.</p>
-<br>
-<div class="align-items-center justify-content-end  p-r-5">
-<a href="https://github.com/alexcorvi/apexo/releases" class="btn btn-large btn-default">Download</a>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="pricing-table">
-<h4 class="text-default">
-Web application
-</h4>
-<br>
-<p class="fs-15">You can also skip downloading the application and just use the progressive web application.</p>
-<br>
-<div class="align-items-center justify-content-end  p-r-5">
-<a href="https://web.apexo.app/" class="btn btn-large btn-default">Web Application</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-black p-t-35 relative">
-<div class="container">
-<br>
-<div class="row justify-content-center">
-<div class="col-md-11 p-b-20">
-<h3 class="text-white">Easy to setup</h3>
-</div>
-<div class="col-md-3 p-b-60 sm-p-b-30 sm-p-t-30 xs-p-t-0 b-b b-grey-transparent">
-<h3 class="text-white normal p-b-5">1.</h3>
-<p class="text-white">
-<span class="normal block lh-14">Server installation</span>
-<span class="fs-11 hint-text">Just install CouchDB and SSL on your server</span>
-</p>
-</div>
-<div class="col-md-3 p-b-60 sm-p-b-30 sm-p-t-30 b-b b-grey-transparent">
-<h3 class="text-white normal p-b-5">2.</h3>
-<p class="text-white">
-<span class="normal block lh-14">Download</span>
-<span class="fs-11 hint-text">Download or use the web application</span>
-</p>
-</div>
-<div class="col-md-3 p-b-60 sm-p-b-30 sm-p-t-30 b-b b-grey-transparent">
-<h3 class="text-white normal p-b-5">3.</h3>
-<p class="text-white">
-<span class="normal block lh-14">Login</span>
-<span class="fs-11 hint-text">Sign in with your server and credentials</span>
-</p>
-</div>
-<div class="col-md-2 p-b-60 sm-p-b-30 sm-p-t-30 b-b b-grey-transparent">
-<h3 class="text-white normal p-b-5">4.
-</h3>
-<p class="text-white">
-<span class="normal block lh-14">Enjoy...</span>
-</p>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-black p-t-90 p-b-100 relative">
-<div class="container">
-<div class="row sm-p-l-15 sm-p-r-15 justify-content-center">
-<div class="col-md-5 ">
-<div class="p-b-30">
-<h4 class="text-white normal p-b-20">License</h4>
-<p class="text-white fs-15 flex-1">
-<span class="hint-text">This application was made by a dentist out of frustration with free and commercial application. You can totally use it for free or you can provide it for your clients. The license for this application is </span>
-<a href="https://github.com/alexcorvi/apexo/blob/master/LICENSE.md" target="_blank" class="normal text-primary">MIT License</a>
-<span class="hint-text">A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed
-works, modifications, and larger works may be distributed under different terms and without source code.</span>
-</p>
-</div>
-</div>
-<div class="col-md-5 offset-md-1">
-<div class="">
-<h4 class="text-white normal  p-b-20">Support</h4>
-<p class="text-white fs-15 flex-1">
-<span class="hint-text">Includes; Availability of the author to answer questions. Get assistance with reported bugs
- and issues. Help with included 3rd party assets. Support does not include; Customizations
-and installations. And due to time restriction can only be offered at</span>
-<a href="https://github.com/alexcorvi/apexo/issues" target="_blank" class="normal text-primary">GitHub issues.</a>
-</p>
-</div>
-</div>
-</div>
-<div class="row justify-content-center">
-<p class="p-t-100 fs-16 text-white col-md-5 ">
-<span class="hint-text">
-Something still not clear?
-</span>
-<a href="https://github.com/alexcorvi/apexo/issues" target="_blank" class="normal text-primary">submit an issue</a>
-<span class="hint-text">
-and I'll try to respond there.
-</span>
-</p>
-</div>
-</div>
-</section>
-<section class="p-b-55 p-t-75 xs-p-b-20 bg-master-darker relative">
-<div class="container">
-<div class="row">
-<div class="col-sm-4 col-xs-12 xs-m-b-40">
-<img src="assets/images/logo_white.png" height="18" data-src-retina="assets/images/logo_white_2x.png" class="alt" alt="">
-</div>
-</div>
-<div>
-<p class="fs-11 hint-text no-padding inline rights-bar p-t-10">Made with ♡ in Mosul</p>
-<ul class="copyright-links">
-<li>
-<a href="https://docs.apexo.app">Documentation</a>
-</li>
-<li>
-<a href="https://demo.apexo.app">Demo</a>
-</li>
-<li>
-<a href="https://github.com/alexcorvi/apexo/releases" target="_blank">Download</a>
-</li>
-<li>
-<a href="https://github.com/alexcorvi/apexo" target="_blank">GitHub</a>
-</li>
-</ul>
-</div>
-</div>
-</section>
-</div>
-<script type="text/javascript" src="assets/js/pages.image.loader.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="assets/js/pages.frontend.js"></script>
--->
-</body>
+			<section class="bg-black p-t-35 relative">
+				<div class="container">
+					<br />
+				</div>
+			</section>
+			<section class="bg-black p-t-90 p-b-100 relative">
+				<div class="container">
+					<div class="row sm-p-l-15 sm-p-r-15 justify-content-center">
+						<div class="col-md-5">
+							<div class="p-b-30">
+								<h4 class="text-white normal p-b-20">
+									License
+								</h4>
+								<p class="text-white fs-15 flex-1">
+									<span class="hint-text"
+										>This application is an open source
+										effort, was made by a dentist out of
+										frustration with other free and
+										commercial applications. The license for
+										the community version is
+									</span>
+									<a
+										href="https://github.com/alexcorvi/apexo/blob/master/LICENSE.md"
+										target="_blank"
+										class="normal text-primary"
+										>MIT License</a
+									>
+									<span class="hint-text"
+										>A short and simple permissive license
+										with conditions only requiring
+										preservation of copyright and license
+										notices.</span
+									>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-5 offset-md-1">
+							<div class="">
+								<h4 class="text-white normal p-b-20">
+									Support
+								</h4>
+								<p class="text-white fs-15 flex-1">
+									<span class="hint-text"
+										>Includes; Availability of the author to
+										answer questions. Get assistance with
+										reported bugs and issues. Help with
+										included 3rd party assets. Community
+										version support is offered at</span
+									>
+									<a
+										href="https://github.com/alexcorvi/apexo/issues"
+										target="_blank"
+										class="normal text-primary"
+										>GitHub issues.</a
+									>
+									While <b>Supported version</b> support is
+									provided instantly within the application.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<p class="p-t-100 fs-16 text-white col-md-5">
+							<span class="hint-text">
+								Something still not clear?
+							</span>
+							<a
+								href="mailto:ali.a.saleem@outlook.com"
+								target="_blank"
+								class="normal text-primary"
+								>Email me</a
+							>
+							<span class="hint-text">
+								and I'll try to respond as fast as possible.
+							</span>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="p-b-55 p-t-75 xs-p-b-20 bg-master-darker relative">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 xs-m-b-40">
+							<img
+								src="assets/images/logo_white.png"
+								height="18"
+								data-src-retina="assets/images/logo_white_2x.png"
+								class="alt"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div>
+						<p
+							class="fs-11 hint-text no-padding inline rights-bar p-t-10"
+						>
+							Made with ♡ in Mosul / Iraq <br />
+							by Ali A. Saleem
+						</p>
+						<ul class="copyright-links">
+							<li>
+								<a href="https://demo.apexo.app" target="_blank"
+									>Demo</a
+								>
+							</li>
+							<li>
+								<a href="#getting-started">Get started</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script
+			type="text/javascript"
+			src="assets/js/pages.image.loader.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="assets/plugins/jquery/jquery-1.11.1.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="assets/js/pages.frontend.js"
+		></script>
+	</body>
 </html>

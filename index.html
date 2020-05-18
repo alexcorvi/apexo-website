@@ -466,17 +466,59 @@
 									<i>Supported</i> version
 								</h3>
 								<h5 class="price">399$ / year</h5>
-								<p class="fs-15">
+								<p class="plan-hint">
 									Our servers has been optimized to be used
 									with our application. It's highly secured,
-									encrypted, HIPAA-compliant, fast, regularly
-									maintained, with 99% uptime. It takes only
-									few clicks to get started.
-									<br /><br />
-									<button class="btn btn-primary">
-										Get Started
-									</button>
+									encrypted, HIPAA-compliant, fast, efficient
+									regularly maintained, with 99% uptime
+									guaranteed.
 								</p>
+								<hr />
+								<form
+									accept-charset="UTF-8"
+									action="https://getform.io/f/11286b74-f29c-4566-bf22-5d66563fc6af"
+									method="POST"
+									target="_blank"
+									id="ajaxForm"
+								>
+									<div class="form-group">
+										<label for="ContactInputEmail1" required
+											>Email address</label
+										>
+										<input
+											type="email"
+											name="email"
+											class="form-control"
+											id="ContactInputEmail1"
+											aria-describedby="emailHelp"
+											placeholder="Enter email"
+											required
+										/>
+									</div>
+									<div class="form-group">
+										<label for="ContactInputName" required
+											>Your Name</label
+										>
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											id="ContactInputName"
+											placeholder="Enter your name"
+											required
+										/>
+									</div>
+									<div class="success">
+										We received your submission, thank you!
+									</div>
+									<button
+										type="submit"
+										class="btn btn-primary"
+										id="submit-form"
+									>
+										Submit
+									</button>
+								</form>
 							</span>
 						</div>
 					</div>
@@ -608,5 +650,32 @@
 			type="text/javascript"
 			src="assets/js/pages.frontend.js"
 		></script>
+		<script type="text/javascript" data-cfasync="false">
+			// send email
+			$("#ajaxForm").submit(function (e) {
+				e.preventDefault();
+				var action = $(this).attr("action");
+				$.ajax({
+					type: "POST",
+					url: action,
+					crossDomain: true,
+					data: new FormData(this),
+					dataType: "json",
+					contentType: "multipart/form-data",
+					processData: false,
+					contentType: false,
+					headers: {
+						Accept: "application/json",
+					},
+				})
+					.done(function () {
+						$(".success").addClass("is-active");
+						$("#submit-form").addClass("hide");
+					})
+					.fail(function () {
+						alert("An error occurred please try again later.");
+					});
+			});
+		</script>
 	</body>
 </html>

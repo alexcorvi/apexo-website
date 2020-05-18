@@ -34,6 +34,7 @@
 	border: 1px solid #e3e3e3;
 	padding: 25px;
 	border-radius: 5px;
+	height: 700px;
 }
 .price {
 	font-size: 16px;
@@ -549,4 +550,40 @@
 
 .bg-primary {
 	border-bottom: 1px solid #232a35;
+}
+
+.success {
+	display: none;
+	background: #e1f8ed;
+	padding: 20px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.success.is-active {
+	display: block;
+}
+
+#ajaxForm {
+	text-align: left;
+}
+
+.community-link {
+	display: block;
+}
+
+.moip-any-donate-btn {
+	width: 100% !important;
+}
+
+.plan-hint {
+	font-size: 13px;
+	line-height: normal;
+	text-align: left;
+}
+
+.donations-link {
+	font-weight: 600;
+	color: #ffeb3b;
+	text-decoration: underline;
 }
